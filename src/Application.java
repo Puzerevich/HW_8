@@ -14,16 +14,11 @@ public class Application {
                 {"9", "10", "11", "12"}};
 
         ArrayValueCalculator calc = new ArrayValueCalculator();
-        calc.doCalc(arrCorrect);
-//        System.out.println(calc.doCalc(arrCorrect));
+        calc.doCalc(arrCorrect); 
 
-        try {
-            System.out.println(calc.doCalc(arrCorrect));
-//            System.out.println(calc.doCalc(arrWrong));
+//            System.out.println(calc.doCalc(arrCorrect));
+            System.out.println(calc.doCalc(arrWrong));
 //            System.out.println(calc.doCalc(arrWrongSize));
-        } catch (ArraySizeException e) {
-            System.err.println(e.getMessage());
-            System.err.println(Arrays.toString(e.getStackTrace()));
-        }
+
     }
 }
