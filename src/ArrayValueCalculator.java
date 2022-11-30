@@ -21,10 +21,10 @@ public class ArrayValueCalculator {
                     }
                 }
             }catch (NumberFormatException e) {
-                throw new ArrayDataException("Error on line " + Arrays.toString(str));
+                throw new ArrayDataException("(ArrayDataException) Error on line " + Arrays.toString(str));
             }
         } else {
-            throw new ArraySizeException(String.format("Error size. Your array is %dx%d", str.length, str[0].length));
+            throw new ArraySizeException(String.format("(ArraySizeException) Error size. Your array is %dx%d", str.length, str[0].length));
         }
 
         return  sum;
