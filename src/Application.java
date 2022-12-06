@@ -23,8 +23,8 @@ public class Application {
         System.out.println(calc.doCalc(arrWrongSize));
 //            System.out.println(calc.doCalc(arrWrongSize));
         } catch (ArraySizeException | ArrayDataException e) {
-        System.err.println("1)"+e.getMessage());
-        System.err.println("2)"+Arrays.toString(e.getStackTrace()));
+        System.err.println(e.getMessage());
+        System.err.println(Arrays.toString(e.getStackTrace()));
         }
     }
 }
